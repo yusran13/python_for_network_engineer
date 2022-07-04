@@ -92,9 +92,3 @@ for device in list_of_routers:
     print(device['hostname'], device['ip_address'])
 
 #list of keys
-
-
-
-
-#test
-#testlagi
