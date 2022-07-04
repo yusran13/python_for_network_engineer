@@ -1,16 +1,10 @@
-#If - else
+
+hostname  = "BDG-SWNT-EN1-C506Z"
+
+if "BDG-" in hostname:
+    print(f"{hostname} ada di kota bandung")
+else:
+    print(f"{hostname} bukan di kota Bandung")
 
 
 
-
-
-
-
-
-
-'''
-Write a program that prints the numbers from 1 to 100. 
-But for multiples of three print “Fizz” instead of the number and 
-for the multiples of five print “Buzz”. 
-For numbers which are multiples of both three and five print “FizzBuzz”.
-'''

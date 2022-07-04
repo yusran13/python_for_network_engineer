@@ -1,4 +1,4 @@
-data = [
+list_device = [
     {
         "reachability": "REACHABLE",
         "admin_status": "Managed",

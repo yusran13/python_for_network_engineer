@@ -1,4 +1,3 @@
-from operator import ne
 from netmiko import ConnectHandler
 import pprint
 
