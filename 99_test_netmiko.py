@@ -1,5 +1,6 @@
 from operator import ne
 from netmiko import ConnectHandler
+import pprint
 
 device_conn = {
         'device_type': 'cisco_xr',
@@ -15,11 +16,12 @@ device_conn = {
 net_connect = ConnectHandler(**device_conn)
 print("Connected")
 
-show_interfaces = net_connect.send_command("show ip int brief")
-print(show_interfaces)
-# show_interfaces = net_connect.send_command("show ip int brief", use_textfsm=True, delay_factor=100)
+# show_interfaces = net_connect.send_command("show ip int brief")
+
+show_interfaces = net_connect.send_command("show ip int brief", use_textfsm=True, delay_factor=100)
 
 
 
 net_connect.disconnect()
-print(show_interfaces)
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(show_interfaces)
