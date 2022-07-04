@@ -1,6 +1,6 @@
 from importlib.resources import contents
-from sample_data import list_device
 from pprint import pprint
+from sample_data import *
 
 list_ip = [
     "114.1.201.13",
@@ -8,16 +8,18 @@ list_ip = [
     "114.1.215.16",
 ]
 
-for d in list_device:
-    pprint(d)
+# for ip in list_device:
+#     print(f"{ip['hostname']} - {ip['loopback']}")
+
+
 # for ip in list_ip:
 #     print(ip)
 
-# for index, content in enumerate(list_ip):
-#     print(index, content)
+for index, content in enumerate(list_device):
+    print(index, content['hostname'])
 
 # for i in range(5):
-#     print(i)
+#     print("Hello world")
 
 # for i in range(1, 6):
 #     print(i)
