@@ -1,0 +1,17 @@
+ipv4 access-list ACL_IP_MANAGEMENT
+   permit ipv4 host 114.2.59.50 any
+   permit ipv4 host 114.2.59.54 any
+   permit ipv4 host 114.0.87.14 any
+
+control-plane
+ management-plane
+  inband
+   interface all
+    allow SSH peer
+     address ipv4 114.2.59.50
+     address ipv4 114.2.59.54
+     address ipv4 114.0.87.14
+!
+
+commit
+end

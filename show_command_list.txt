@@ -1,0 +1,6 @@
+term len 0
+show platform
+show version
+show clock
+show redundancy
+ping vrf 652080_DCN 10.31.224.5
