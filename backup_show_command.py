@@ -4,8 +4,8 @@ from list_target_ip import *
 
 device_conn = {
     'device_type': 'cisco_xr',
-    'username': 'cisco',
-    'password': "!1s4tmpl5!",
+    'username': 'XXXXXX',
+    'password': "XXXXXX",
     'conn_timeout': 40,
     'banner_timeout': 40,
     'fast_cli': False,
