@@ -1,0 +1,92 @@
+Last login: Thu Jul 14 16:24:33 2022 from 10.34.169.23
+
+
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           =    You are entering PT INDOSAT Tbk network area   =
+           =                                                   =
+           =       Hostname  : BDG-LITB-EN1-C516Z              =
+           =       Device    : N540X-16Z4G8Q2C-D               =
+           =       Site_Name : LABTEK-ITB                      =
+           =       Site_Id   : 03BDG335                        =
+           =       Address   : Jl.G ITB , Lb.Siliwangi,        = 
+           =                   Kec. Coblong, Kota. Bandung,    =
+           =                   Jawa Barat                      =
+           =       Latitute  : -6.888426                       =
+           =       Longitude : 107.610172                      =
+           =       Region    : WEST JAVA                       =
+           =       Contact   : ip.tac@indosat.com              =
+           =                  +628557897897                    =
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           =         WARNING! This is a secured device.        =
+           =       Unauthorized use is prohibited by law.      =
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#terminal width 511
+
+Thu Jul 14 16:31:14.666 WIB
+terminal length 0
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#terminal length 0
+
+Thu Jul 14 16:31:14.757 WIB
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#term len 0
+
+Thu Jul 14 16:31:15.805 WIB
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#show platform
+
+Thu Jul 14 16:31:16.463 WIB
+Node              Type                     State                    Config state
+--------------------------------------------------------------------------------
+0/RP0/CPU0        N540X-16Z8Q2C-D(Active)  IOS XR RUN               NSHUT
+0/PM0             N540-PSU-FIXED-D         OPERATIONAL              NSHUT
+0/PM1             N540-PSU-FIXED-D         OPERATIONAL              NSHUT
+0/FT0             N540-X-BB-FAN            OPERATIONAL              NSHUT
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#show version
+
+Thu Jul 14 16:31:17.399 WIB
+Cisco IOS XR Software, Version 7.5.2 LNT
+Copyright (c) 2013-2022 by Cisco Systems, Inc.
+
+Build Information:
+ Built By     : ingunawa
+ Built On     : Tue Apr 26 23:20:19 UTC 2022
+ Build Host   : iox-lnx-011
+ Workspace    : /auto/srcarchive14/prod/7.5.2/ncs540l/ws
+ Version      : 7.5.2
+ Label        : 7.5.2
+
+cisco NCS540L (C3708 @ 1.70GHz)
+cisco N540X-16Z8Q2C-D (C3708 @ 1.70GHz) processor with 8GB of memory
+BDG-LITB-EN1-C516Z uptime is 7 weeks, 20 hours, 8 minutes
+Cisco NCS 540 System with 16x10G+8x25G+2x100G DC Chassis
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#show clock
+
+Thu Jul 14 16:31:18.105 WIB
+16:31:18.159 WIB Thu Jul 14 2022
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#show redundancy
+
+% Incomplete command.
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#
+
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#ping vrf 652080_DCN 10.31.224.5
+
+Thu Jul 14 16:31:19.305 WIB
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.31.224.5, timeout is 2 seconds:
+UUUUU
+Success rate is 0 percent (0/5)
+RP/0/RP0/CPU0:BDG-LITB-EN1-C516Z#

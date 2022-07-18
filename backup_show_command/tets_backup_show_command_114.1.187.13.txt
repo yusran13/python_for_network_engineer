@@ -1,0 +1,128 @@
+
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           =    You are entering PT INDOSAT Tbk network area   =
+           =                                                   =
+           =       Hostname  : BDG-KOPO-AN1-C5504              =
+           =       Device    : NCS-5504                        =
+           =       Site_Name : KOPO                            =
+           =       Site_Id   : 03BDG004                        =
+           =       Address   : Jl. Raya Kopo Depan toll Gate   =
+           =                   Kopo Kel.Margasuka/bbk.Ciparay  =
+           =       Latitute  : -6.95514                        =
+           =       Longitude : 107.58023                       =
+           =       Region    : WEST JAVA                       =
+           =       Contact   : ip.tac@indosat.com              =
+           =                  +628557897897                    =
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           =         WARNING! This is a secured device.        =
+           =       Unauthorized use is prohibited by law.      =
+           =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#terminal width 511
+
+Thu Jul 14 16:31:50.085 WIB
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#terminal length 0
+
+Thu Jul 14 16:31:50.161 WIB
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#term len 0
+
+Thu Jul 14 16:31:51.050 WIB
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#show platform
+
+Thu Jul 14 16:31:51.705 WIB
+Node              Type                       State             Config state
+--------------------------------------------------------------------------------
+0/0/1             NC55-MPA-12T-S             OK                
+0/0/2             NC55-MPA-4H-S              OK                
+0/0/CPU0          NC55-MOD-A-S               IOS XR RUN        NSHUT
+0/0/NPU0          Slice                      UP                
+0/1/2             NC55-MPA-4H-S              OK                
+0/1/CPU0          NC55-MOD-A-S               IOS XR RUN        NSHUT
+0/1/NPU0          Slice                      UP                
+0/RP0/CPU0        NC55-RP-E(Active)          IOS XR RUN        NSHUT
+0/RP1/CPU0        NC55-RP-E(Standby)         IOS XR RUN        NSHUT
+0/FC0             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FC1             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FC2             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FC3             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FC4             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FC5             NC55-5504-FC               OPERATIONAL       NSHUT
+0/FT0             NC55-5504-FAN              OPERATIONAL       NSHUT
+0/FT1             NC55-5504-FAN              OPERATIONAL       NSHUT
+0/FT2             NC55-5504-FAN              OPERATIONAL       NSHUT
+0/PM0             NC55-PWR-3KW-DC            OPERATIONAL       NSHUT
+0/PM1             NC55-PWR-3KW-DC            OPERATIONAL       NSHUT
+0/PM2             NC55-PWR-3KW-DC            OPERATIONAL       NSHUT
+0/PM3             NC55-PWR-3KW-DC            OPERATIONAL       NSHUT
+0/SC0             NC55-SC                    OPERATIONAL       NSHUT
+0/SC1             NC55-SC                    OPERATIONAL       NSHUT
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#show version
+
+Thu Jul 14 16:31:52.400 WIB
+Cisco IOS XR Software, Version 7.3.2
+Copyright (c) 2013-2021 by Cisco Systems, Inc.
+
+Build Information:
+ Built By     : ingunawa
+ Built On     : Wed Oct 13 21:15:13 PDT 2021
+ Built Host   : iox-ucs-023
+ Workspace    : /auto/srcarchive17/prod/7.3.2/ncs5500/ws
+ Version      : 7.3.2
+ Location     : /opt/cisco/XR/packages/
+ Label        : 7.3.2
+
+cisco NCS-5500 () processor
+System uptime is 33 weeks 5 days 54 minutes
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#show clock
+
+Thu Jul 14 16:31:53.024 WIB
+16:31:53.073 WIB Thu Jul 14 2022
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#show redundancy
+
+Thu Jul 14 16:31:53.653 WIB
+Redundancy information for node 0/RP0/CPU0:
+==========================================
+Node 0/RP0/CPU0 is in ACTIVE role
+Partner node (0/RP1/CPU0) is in STANDBY role
+Standby node in 0/RP1/CPU0 is ready
+Standby node in 0/RP1/CPU0 is NSR-ready
+
+Reload and boot info
+----------------------
+RP reloaded Sat Nov 20 15:36:57 2021: 33 weeks, 5 days, 54 minutes ago
+Active node booted Sat Nov 20 15:36:57 2021: 33 weeks, 5 days, 54 minutes ago
+Standby node boot Sat Nov 20 15:36:44 2021: 33 weeks, 5 days, 55 minutes ago
+Standby node last went not ready Sun Nov 21 00:31:35 2021: 33 weeks, 4 days, 16 hours,  ago
+Standby node last went ready Sun Nov 21 00:31:35 2021: 33 weeks, 4 days, 16 hours,  ago
+Standby node last went not NSR-ready Sat Nov 20 15:43:28 2021: 33 weeks, 5 days, 48 minutes ago
+Standby node last went NSR-ready Sat Nov 20 15:43:29 2021: 33 weeks, 5 days, 48 minutes ago
+There have been 0 switch-overs since reload
+
+Active node reload "User initiated graceful reload"
+Standby node reload "User initiated graceful reload "
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
+
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#ping vrf 652080_DCN 10.31.224.5
+
+Thu Jul 14 16:31:54.271 WIB
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.31.224.5, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 10/14/19 ms
+RP/0/RP0/CPU0:BDG-KOPO-AN1-C5504#
