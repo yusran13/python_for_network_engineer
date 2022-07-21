@@ -1,6 +1,6 @@
 from netmiko import ConnectHandler
 from pprint import pprint
-from list_target_ip import *
+from list_target_ip import list_ip
 from device_driver import get_device_conn
 
 
@@ -16,13 +16,6 @@ for ip in list_ip:
 
     #SEND COMMAND ONE LINE
     # output = net_connect.send_command("show run router bgp 4761  neighbor-group AN | in route-policy")
-    output = net_connect.send_command("show interface brief")
-    pprint(output)
-
-    output = net_connect.send_command("show interface brief", use_textfsm=True)
-    pprint(output)
-    
-
     # output_split = output.split("\n")
     # print(output_split)
     
@@ -33,10 +26,16 @@ for ip in list_ip:
     #     net_connect.disconnect()
     # else:
     #     print(f"ACL Solarwind at Router {ip} is been applied")
-    # # pp = pprint.PrettyPrinter(indent=4)
-    # # pp.pprint(show_interfaces)
 
     # #SEND COMMAND MULTIPLE LINE
     # net_connect.send_config_set(nso_acl_config)
 
+    #GET OUTPUT COMMAND WITHOUT PARSING
+    # output = net_connect.send_command("show interface brief")
+    # pprint(output)
+
+    #GET OUTPUT COMMAND WITH TEXTFSM PARSING
+    output = net_connect.send_command("show interface brief", use_textfsm=True)
+    pprint(output)
+    
     print('=================================================')

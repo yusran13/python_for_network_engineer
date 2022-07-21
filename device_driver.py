@@ -2,8 +2,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# os.environ["NTC_TEMPLATES_DIR"] = 
-# os.environ["NET_TEXTFSM"] = 
 
 def get_device_conn(ip_address):
 
